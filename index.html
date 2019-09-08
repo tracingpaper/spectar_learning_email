@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spectar Learning | Email Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Muli', 'Roboto', sans-serif;
+            font-size: 16px;
+            background: #eee;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | Buttons
+        |-----------------------------------------------------
+        */
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            color: #4d4d4d;
+            background-color: #e9bd13;
+            border-radius: 0.3125rem;
+            font-weight: 600;
+        }
+
+        .btn.btn-hero {
+            font-size: 1.125rem;
+            padding: 0.5rem 2rem;
+        }
+
+        .btn.btn-primary {
+            background: #197ed1;
+            color: #fff;
+        }
+
+        .btn.btn-icon {
+            display: inline-flex;
+            align-items: center;
+            padding-right: 1rem;
+        }
+
+        .btn.btn-icon .icon {
+            margin-left: 0.5rem;
+        }
+
+        .btn.btn-icon .icon img {
+            width: 24px;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | Blocks
+        |-----------------------------------------------------
+        */
+        .block .block-header {
+            padding: 0.5rem 1rem;
+            background: #e6e6e6;
+        }
+
+        .block:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .block .block-header .block-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #666666;
+        }
+
+        .block .block-content {
+            background: #f2f2f2;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | Grid
+        |-----------------------------------------------------
+        */
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+        }
+
+        .grid .column {
+            width: 50%;
+            padding: 0.5rem;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | HEADER
+        |-----------------------------------------------------
+        */
+
+        header {
+            background: #fff;
+            padding: 1rem 2rem;
+        }
+
+        header div.brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        header div.brand .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header div.brand .logo img {
+            width: 40px;
+            margin-right: 8px;
+        }
+
+        header div.brand .logo .text {
+            color: #333333;
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+
+        header .navbar ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        header .navbar ul li:not(:last-child){
+            margin-right: 0.25rem;
+        }
+
+        header .navbar ul li a {
+            color: #999999;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        header .navbar ul li a:hover {
+            color: #e9bd13;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | HERO
+        |-----------------------------------------------------
+        */
+        #hero {
+            height: 360px;
+            background-image: url('assets/images/hero_bg.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        #hero .hero-content {
+            background: rgba(0,0,0,0.55);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+
+        #hero .hero-content h1.title {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+
+        #hero .hero-content .lead {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | COURSES
+        |-----------------------------------------------------
+        */
+        #courses {
+            background: #fff;
+            padding: 1rem 2rem;
+        }
+
+        #courses h1.title {
+            font-size: 2rem;
+            color: #00264b;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #courses .grid .column .image {
+            margin-bottom: 1rem;
+        }
+
+        #courses .grid .column .image img {
+            width: 100%;
+        }
+
+        #courses .grid .column h2.title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #00264b;
+        }
+
+        #courses .grid .column .summary {
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: #808080;
+            margin-bottom: 1rem;
+        }
+
+        #courses .grid .column .btn {
+            margin-bottom: 1rem;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | BATCHES
+        |-----------------------------------------------------
+        */
+        .schedule {
+            display: flex;
+            align-items: center;
+            padding: 0.875rem;
+        }
+
+        .schedule .icon {
+            /* padding: 0.25rem; */
+            margin-right: 0.5rem;
+        }
+
+        .schedule .icon img {
+            width: 40px;
+        }
+
+        .schedule .content {
+            flex: 1;
+        }
+
+        .schedule .content h4.sub-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #999999;
+            text-transform: uppercase;
+        }
+
+        .schedule .content .date {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4d4d4d;
+        }
+
+        /*
+        |-----------------------------------------------------
+        | FOOTER
+        |-----------------------------------------------------
+        */
+        footer {
+            background: #00264b;
+            padding: 2rem;
+            color: #fff;
+        }
+
+        footer .address {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        footer .contacts {
+            font-size: 0.75rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        footer .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .social-icons a.social-icon{
+            opacity: 0.875;
+        }
+
+        footer .social-icons a.social-icon:hover {
+            opacity: 1;
+        }
+
+        footer .social-icons a.social-icon:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        footer .social-icons a.social-icon img{
+            height: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <a href="#LOGO" class="logo">
+                    <img src="assets/logo.png" alt="Spectar Learning">
+                    <span class="text">Learning</span>
+                </a>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#NAV_HOME">Home</a>
+                    </li>
+                    <li>
+                        <a href="#NAV_COURSE">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#NAV_CONTACT">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+            
+        <main>
+            <div id="hero">
+                <!-- <img class="bg-image" src="assets/images/hero_bg.png"> -->
+                <div class="hero-content">
+                    <h1 class="title">Get yourself Certified with our CorEx Learning Programs</h1>
+                    <p class="lead">Master in-demand skills and achieve career growth</p>
+
+                    <a href="#HERO_VIEW_MORE" class="btn btn-hero">
+                        View More
+                    </a>
+                </div>
+            </div>
+            <!-- /Hero -->
+
+            <div id="courses">
+                <h1 class="title">Courses</h1>
+
+                <div class="grid">
+                    <div class="column">
+                        <div class="image">
+                            <img src="assets/images/bd.png" alt="Big Data">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Big Data</h2>
+                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                            <a href="#BIG_DATA" class="btn">See More</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="column">
+                        <div class="image">
+                            <img src="assets/images/bd.png" alt="Big Data">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Big Data</h2>
+                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                            <a href="#BIG_DATA" class="btn">See More</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="column">
+                        <div class="image">
+                            <img src="assets/images/bd.png" alt="Big Data">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Big Data</h2>
+                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                            <a href="#BIG_DATA" class="btn">See More</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="column">
+                        <div class="image">
+                            <img src="assets/images/bd.png" alt="Big Data">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Big Data</h2>
+                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                            <a href="#BIG_DATA" class="btn">See More</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="column">
+                        <div class="image">
+                            <img src="assets/images/bd.png" alt="Big Data">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Big Data</h2>
+                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                            <a href="#BIG_DATA" class="btn">See More</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="column">
+
+                        <div class="block">
+                            <div class="block-header">
+                                <h3 class="block-title">1st Batch</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="schedule">
+                                    <div class="icon">
+                                        <img src="assets/icons/calendar_icon.svg" alt="From">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="sub-title">From</h4>
+                                        <div class="date">12 Sep 2019</div>
+                                    </div>
+                                </div>
+                                <!-- schedule -->
+
+                                <div class="schedule">
+                                    <div class="icon">
+                                        <img src="assets/icons/calendar_icon.svg" alt="TO">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="sub-title">To</h4>
+                                        <div class="date">22 Sep 2019</div>
+                                    </div>
+                                </div>
+                                <!-- schedule -->
+                            </div>
+                        </div>
+                        <!-- block -->
+
+                        <div class="block">
+                            <div class="block-header">
+                                <h3 class="block-title">1st Batch</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="schedule">
+                                    <div class="icon">
+                                        <img src="assets/icons/calendar_icon.svg" alt="From">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="sub-title">From</h4>
+                                        <div class="date">12 Sep 2019</div>
+                                    </div>
+                                </div>
+
+                                <div class="schedule">
+                                    <div class="icon">
+                                        <img src="assets/icons/calendar_icon.svg" alt="TO">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="sub-title">To</h4>
+                                        <div class="date">22 Sep 2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block -->
+                        
+                    </div>
+                    <!-- column -->
+                </div>
+                <!-- /grid -->
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="#REQUEST_COURSE" class="btn btn-hero btn-primary btn-icon">
+                        Request New Course
+                        <div class="icon">
+                            <img src="assets/icons/request_icon.svg" alt="Request New Course">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- #courses -->
+
+        </main>
+
+        <footer>
+            <div class="grid">
+                <div class="column">
+                    <div class="address">
+                        313/530 Little Collins Street, <br>
+                        Melbourne, VIC – 3000
+                    </div>
+                    <div class="contacts">
+                        <div>contact@spectarlearning.com</div>
+                        <div>+61 (0) 478 841 203</div>
+                    </div>
+    
+                    <div class="social-icons">
+                        <a href="#SOCIAL_TWITTER" class="social-icon">
+                            <img src="assets/icons/twitter_icon.svg" alt="Twitter">
+                        </a>
+                        <a href="#SOCIAL_LINKEDIN" class="social-icon">
+                            <img src="assets/icons/linkedin_icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#SOCIAL_FACEBOOK" class="social-icon">
+                            <img src="assets/icons/facebook_icon.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div style="text-align: center;">
+                        <img width="175px" src="assets/images/mf_logo_2.png" alt="Micro Focus">
+                    </div>
+                    <div style="text-align: center;">
+                        <img width="100px" src="assets/images/mf_logo.png" alt="Micro Focus">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
