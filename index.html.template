@@ -180,7 +180,7 @@
         */
         #hero {
             height: 360px;
-            background-image: url('https://tracingpaper-sl-email-template.netlify.com/assets/images/hero_bg.png');
+            background-image: url('<%host_url%>/assets/images/hero_bg.png');
             background-position: center;
             background-size: cover;
         }
@@ -339,7 +339,7 @@
         <header>
             <div class="brand">
                 <a href="#LOGO" class="logo">
-                    <img src="https://tracingpaper-sl-email-template.netlify.com/assets/logo.png" alt="Spectar Learning">
+                    <img src="<%host_url%>/assets/logo.png" alt="Spectar Learning">
                     <span class="text">Learning</span>
                 </a>
             </div>
@@ -381,7 +381,7 @@
                 <div class="grid">
                     <div class="column">
                         <div class="image">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/images/bd.png" alt="Big Data">
+                            <img src="<%host_url%>/assets/images/bd.png" alt="Big Data">
                         </div>
                         <div class="content">
                             <h2 class="title">Big Data</h2>
@@ -393,7 +393,7 @@
 
                     <div class="column">
                         <div class="image">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/images/dd.png" alt="DevOps and Docker">
+                            <img src="<%host_url%>/assets/images/dd.png" alt="DevOps and Docker">
                         </div>
                         <div class="content">
                             <h2 class="title">DevOps and Docker</h2>
@@ -408,7 +408,7 @@
                 <div class="grid">
                     <div class="column">
                         <div class="image">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/images/cs.png" alt="Cyber Security">
+                            <img src="<%host_url%>/assets/images/cs.png" alt="Cyber Security">
                         </div>
                         <div class="content">
                             <h2 class="title">Cyber Security</h2>
@@ -420,7 +420,7 @@
 
                     <div class="column">
                         <div class="image">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/images/ba.png" alt="Business Analytics">
+                            <img src="<%host_url%>/assets/images/ba.png" alt="Business Analytics">
                         </div>
                         <div class="content">
                             <h2 class="title">Business Analytics</h2>
@@ -435,7 +435,7 @@
 
                     <div class="column">
                         <div class="image">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/images/ai.png" alt="AI & Machine Learning">
+                            <img src="<%host_url%>/assets/images/ai.png" alt="AI & Machine Learning">
                         </div>
                         <div class="content">
                             <h2 class="title">AI & Machine Learning</h2>
@@ -454,7 +454,7 @@
                             <div class="block-content">
                                 <div class="schedule">
                                     <div class="icon">
-                                        <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/calendar_icon.png" alt="From">
+                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
                                     </div>
                                     <div class="content">
                                         <h4 class="sub-title">From</h4>
@@ -465,7 +465,7 @@
 
                                 <div class="schedule">
                                     <div class="icon">
-                                        <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/calendar_icon.png" alt="TO">
+                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="TO">
                                     </div>
                                     <div class="content">
                                         <h4 class="sub-title">To</h4>
@@ -484,7 +484,7 @@
                             <div class="block-content">
                                 <div class="schedule">
                                     <div class="icon">
-                                        <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/calendar_icon.png" alt="From">
+                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
                                     </div>
                                     <div class="content">
                                         <h4 class="sub-title">From</h4>
@@ -494,7 +494,7 @@
 
                                 <div class="schedule">
                                     <div class="icon">
-                                        <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/calendar_icon.png" alt="TO">
+                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="TO">
                                     </div>
                                     <div class="content">
                                         <h4 class="sub-title">To</h4>
@@ -513,7 +513,7 @@
                     <a href="#REQUEST_COURSE" class="btn btn-hero btn-primary btn-icon">
                         Request New Course
                         <div class="icon">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/request_icon.png" alt="Request New Course">
+                            <img src="<%host_url%>/assets/icons/request_icon.png" alt="Request New Course">
                         </div>
                     </a>
                 </div>
@@ -537,22 +537,22 @@
     
                     <div class="social-icons">
                         <a href="#SOCIAL_TWITTER" class="social-icon">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/twitter_icon.png" alt="Twitter">
+                            <img src="<%host_url%>/assets/icons/twitter_icon.png" alt="Twitter">
                         </a>
                         <a href="#SOCIAL_LINKEDIN" class="social-icon">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/linkedin_icon.png" alt="LinkedIn">
+                            <img src="<%host_url%>/assets/icons/linkedin_icon.png" alt="LinkedIn">
                         </a>
                         <a href="#SOCIAL_FACEBOOK" class="social-icon">
-                            <img src="https://tracingpaper-sl-email-template.netlify.com/assets/icons/facebook_icon.png" alt="Facebook">
+                            <img src="<%host_url%>/assets/icons/facebook_icon.png" alt="Facebook">
                         </a>
                     </div>
                 </div>
                 <div class="column">
                     <div style="text-align: center;">
-                        <img width="175px" src="https://tracingpaper-sl-email-template.netlify.com/assets/images/mf_logo_2.png" alt="Micro Focus">
+                        <img width="175px" src="<%host_url%>/assets/images/mf_logo_2.png" alt="Micro Focus">
                     </div>
                     <div style="text-align: center;">
-                        <img width="100px" src="https://tracingpaper-sl-email-template.netlify.com/assets/images/mf_logo.png" alt="Micro Focus">
+                        <img width="100px" src="<%host_url%>/assets/images/mf_logo.png" alt="Micro Focus">
                     </div>
                 </div>
             </div>
