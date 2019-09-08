@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <title>Spectar Learning | Email Template</title>
     <style>
         /* @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap'); */
@@ -129,7 +130,7 @@
         */
 
         body {
-            font-family: 'Muli', 'Roboto', sans-serif;
+            font-family: 'Muli', 'Lato', 'Roboto', 'Verdana', sans-serif;
             font-size: 16px;
             background: #eee;
         }
@@ -238,29 +239,29 @@
         |-----------------------------------------------------
         */
 
-        header {
+        #header {
             background: #fff;
             padding: 1rem 2rem;
         }
 
-        header div.brand {
+        #header .brand {
             text-align: center;
             margin-bottom: 1rem;
         }
 
-        header div.brand .logo {
+        #header .brand .logo {
            text-align: center;
            line-height: 40px;
            vertical-align: middle;
            margin: 0 auto;
         }
 
-        header div.brand .logo img {
+        #header .brand .logo img {
             height: 40px;
             margin-right: 8px;
         }
 
-        header div.brand .logo .text {
+        #header .brand .logo .text {
             color: #333333;
             font-size: 1.125rem;
             line-height: 40px;
@@ -268,16 +269,16 @@
             font-weight: 300;
         }
 
-        header .navbar ul{
+        #header .navbar ul{
             text-align: center;
             list-style-type: none;
         }
 
-        header .navbar ul li {
+        #header .navbar ul li {
             display: inline;
         }
 
-        header .navbar ul li a {
+        #header .navbar ul li a {
             color: #999999;
             padding: 0.5rem 1rem;
             text-align: center;
@@ -286,7 +287,7 @@
             font-size: 0.875rem;
         }
 
-        header .navbar ul li a:hover {
+        #header .navbar ul li a:hover {
             color: #e9bd13;
         }
 
@@ -334,7 +335,7 @@
         */
         #courses {
             background: #fff;
-            padding: 1rem 2rem;
+            padding: 1rem;
         }
 
         #courses h1.title {
@@ -345,29 +346,29 @@
             text-align: center;
         }
 
-        #courses .grid .column .image {
+        #courses .column .image {
             margin-bottom: 1rem;
         }
 
-        #courses .grid .column .image img {
+        #courses .column .image img {
             width: 100%;
         }
 
-        #courses .grid .column h2.title {
+        #courses .column h2.title {
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: #00264b;
         }
 
-        #courses .grid .column .summary {
+        #courses .column .summary {
             font-size: 0.875rem;
             font-weight: 300;
             color: #808080;
             margin-bottom: 1rem;
         }
 
-        #courses .grid .column .btn {
+        #courses .column .btn {
             margin-bottom: 1rem;
         }
 
@@ -377,22 +378,16 @@
         |-----------------------------------------------------
         */
         .schedule {
-            display: flex;
-            align-items: center;
             padding: 0.875rem;
         }
 
         .schedule .icon {
-            /* padding: 0.25rem; */
-            margin-right: 0.5rem;
+            width: 40px;
+            padding-right: 0.5rem;
         }
 
         .schedule .icon img {
             width: 40px;
-        }
-
-        .schedule .content {
-            flex: 1;
         }
 
         .schedule .content h4.sub-title {
@@ -413,268 +408,314 @@
         | FOOTER
         |-----------------------------------------------------
         */
-        footer {
+        #footer {
             background: #00264b;
             padding: 2rem;
             color: #fff !important;
         }
 
-        footer .address {
+        #footer .address {
             font-size: 1rem;
             font-weight: 400;
             margin-bottom: 1rem;
         }
 
-        footer .contacts {
+        #footer .contacts {
             font-size: 0.75rem;
             font-weight: 300;
             margin-bottom: 1rem;
         }
 
-        footer .social-icons {
+        #footer .social-icons {
             display: flex;
             align-items: center;
         }
 
-        footer .social-icons a.social-icon{
+        #footer .social-icons a.social-icon{
             opacity: 0.875;
         }
 
-        footer .social-icons a.social-icon:hover {
+        #footer .social-icons a.social-icon:hover {
             opacity: 1;
         }
 
-        footer .social-icons a.social-icon:not(:last-child) {
-            margin-right: 0.5rem;
-        }
-
-        footer .social-icons a.social-icon img{
+        #footer .social-icons a.social-icon img{
             height: 0.875rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="brand">
-                <a href="#LOGO" class="logo">
-                    <img src="<%host_url%>/assets/logo.png" alt="Spectar Learning">
-                </a>
-            </div>
-            <div class="navbar">
-                <ul class="navbar-nav">
-                    <li>
-                        <a href="#NAV_HOME">Home</a>
-                    </li>
-                    <li>
-                        <a href="#NAV_COURSE">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#NAV_CONTACT">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;" id="header">
+            <tr>
+                <td class="brand" style="text-align: center;">
+                    <a href="#LOGO" class="logo">
+                        <img src="<%host_url%>/assets/logo.png" alt="Spectar Learning">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="navbar">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#NAV_HOME">Home</a>
+                        </li>
+                        <li>
+                            <a href="#NAV_COURSE">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#NAV_CONTACT">Contact</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
 
             
-        <main>
-            <div id="hero">
-                <!-- <img class="bg-image" src="assets/images/hero_bg.png"> -->
-                <div class="hero-content">
-                    <div>
-                        <h1 class="title">Get yourself Certified with our CorEx Learning Programs</h1>
-                        <p class="lead">Master in-demand skills and achieve career growth</p>
-    
-                        <a href="#HERO_VIEW_MORE" class="btn btn-hero">
-                            View More
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- /Hero -->
-
-            <div id="courses">
-                <h1 class="title">Courses</h1>
-
-                <div class="grid">
-                    <div class="column">
-                        <div class="image">
-                            <img src="<%host_url%>/assets/images/bd.png" alt="Big Data">
-                        </div>
-                        <div class="content">
-                            <h2 class="title">Big Data</h2>
-                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
-                            <a href="#BIG_DATA" class="btn">See More</a>
-                        </div>
-                    </div>
-                    <!-- column -->
-
-                    <div class="column">
-                        <div class="image">
-                            <img src="<%host_url%>/assets/images/dd.png" alt="DevOps and Docker">
-                        </div>
-                        <div class="content">
-                            <h2 class="title">DevOps and Docker</h2>
-                            <p class="summary">This course introduces students to the DevOps and Docker concepts</p>
-                            <a href="#DEVOPS_DOCKER" class="btn">See More</a>
-                        </div>
-                    </div>
-                    <!-- column -->
-                </div>
-                <!-- /grid -->
-
-                <div class="grid">
-                    <div class="column">
-                        <div class="image">
-                            <img src="<%host_url%>/assets/images/cs.png" alt="Cyber Security">
-                        </div>
-                        <div class="content">
-                            <h2 class="title">Cyber Security</h2>
-                            <p class="summary">This course introduces students to the Cyber Security Management</p>
-                            <a href="#CYBER_SECURITY" class="btn">See More</a>
-                        </div>
-                    </div>
-                    <!-- column -->
-
-                    <div class="column">
-                        <div class="image">
-                            <img src="<%host_url%>/assets/images/ba.png" alt="Business Analytics">
-                        </div>
-                        <div class="content">
-                            <h2 class="title">Business Analytics</h2>
-                            <p class="summary">This course introduces students with large data, its elements, and usage.</p>
-                            <a href="#BUSINESS_ANALYTICS" class="btn">See More</a>
-                        </div>
-                    </div>
-                    <!-- column -->
-                </div>
-
-                <div class="grid">
-
-                    <div class="column">
-                        <div class="image">
-                            <img src="<%host_url%>/assets/images/ai.png" alt="AI & Machine Learning">
-                        </div>
-                        <div class="content">
-                            <h2 class="title">AI & Machine Learning</h2>
-                            <p class="summary">This course introduces students to the AI Concepts and Machine Learning (ML)</p>
-                            <a href="#BIG_DATA" class="btn">See More</a>
-                        </div>
-                    </div>
-                    <!-- column -->
-
-                    <div class="column">
-
-                        <div class="block" style="margin-bottom: 1rem;">
-                            <div class="block-header">
-                                <h3 class="block-title">1st Batch</h3>
-                            </div>
-                            <div class="block-content">
-                                <div class="schedule">
-                                    <div class="icon">
-                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="sub-title">From</h4>
-                                        <div class="date">12 Sep 2019</div>
-                                    </div>
+        <table cellpadding="0" cellspacing="0" style="width:100%" id="main">
+            <tr>
+                <td>
+                    <table style="width:100%;" cellpadding="0" cellspacing="0" id="hero">
+                        <tr>
+                            <td class="hero-content">
+                                <div>
+                                    <h1 class="title">Get yourself Certified with our CorEx Learning Programs</h1>
+                                    <p class="lead">Master in-demand skills and achieve career growth</p>
+                
+                                    <a href="#HERO_VIEW_MORE" class="btn btn-hero">
+                                        View More
+                                    </a>
                                 </div>
-                                <!-- schedule -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="courses">
 
-                                <div class="schedule">
-                                    <div class="icon">
-                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="TO">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="sub-title">To</h4>
-                                        <div class="date">22 Sep 2019</div>
-                                    </div>
+                    <h1 class="title">Courses</h1>
+
+                    <table style="width:100%;" cellpadding="0" cellspacing="16">
+                        <tr>
+                            <td class="column" style="width:50%;">
+                                <table style="width:100%;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="image">
+                                            <img src="<%host_url%>/assets/images/bd.png" alt="Big Data">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content">
+                                            <h2 class="title">Big Data</h2>
+                                            <p class="summary">This course introduces students to the Hortonworks Data Platform and IDOL</p>
+                                            <a href="#BIG_DATA" class="btn">See More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="column" style="width:50%;">
+                                <table style="width:100%;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="image">
+                                            <img src="<%host_url%>/assets/images/dd.png" alt="DevOps and Docker">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content">
+                                            <h2 class="title">DevOps and Docker</h2>
+                                            <p class="summary">This course introduces students to the DevOps and Docker concepts</p>
+                                            <a href="#DEVOPS_DOCKER" class="btn">See More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column" style="width:50%;">
+                                <table style="width:100%;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="image">
+                                                <img src="<%host_url%>/assets/images/cs.png" alt="Cyber Security">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content">
+                                            <h2 class="title">Cyber Security</h2>
+                                            <p class="summary">This course introduces students to the Cyber Security Management</p>
+                                            <a href="#CYBER_SECURITY" class="btn">See More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td  style="width:50%;" class="column">
+                                <table style="width:100%;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="image">
+                                            <img src="<%host_url%>/assets/images/ba.png" alt="Business Analytics">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content">
+                                            <h2 class="title">Business Analytics</h2>
+                                            <p class="summary">This course introduces students with large data, its elements, and usage.</p>
+                                            <a href="#BUSINESS_ANALYTICS" class="btn">See More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column" style="width:50%;">
+                                <div class="image">
+                                    <img src="<%host_url%>/assets/images/ai.png" alt="AI & Machine Learning">
                                 </div>
-                                <!-- schedule -->
-                            </div>
-                        </div>
-                        <!-- block -->
-
-                        <div class="block">
-                            <div class="block-header">
-                                <h3 class="block-title">1st Batch</h3>
-                            </div>
-                            <div class="block-content">
-                                <div class="schedule">
-                                    <div class="icon">
-                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="sub-title">From</h4>
-                                        <div class="date">12 Sep 2019</div>
-                                    </div>
+                                <div class="content">
+                                    <h2 class="title">AI & Machine Learning</h2>
+                                    <p class="summary">This course introduces students to the AI Concepts and Machine Learning (ML)</p>
+                                    <a href="#BIG_DATA" class="btn">See More</a>
                                 </div>
+                            </td>
+                            <td class="column" style="width:50%;">
 
-                                <div class="schedule">
-                                    <div class="icon">
-                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="TO">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="sub-title">To</h4>
-                                        <div class="date">22 Sep 2019</div>
-                                    </div>
+                                <table class="block" style="width:100%; margin-bottom: 1rem;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="block-header">
+                                            <h3 class="block-title">1st Batch</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="block-content">
+                                            <table style="width:100%;" cellpadding="0" cellspacing="0" class="schedule">
+                                                <tr>
+                                                    <td class="icon">
+                                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
+                                                    </td>
+                                                    <td class="content">
+                                                        <h4 class="sub-title">From</h4>
+                                                        <div class="date">12 Sep 2019</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+            
+                                            <table style="width:100%;" cellpadding="0" cellspacing="0" class="schedule">
+                                                <tr>
+                                                    <td class="icon">
+                                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
+                                                    </td>
+                                                    <td class="content">
+                                                        <h4 class="sub-title">To</h4>
+                                                        <div class="date">22 Sep 2019</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+        
+                                <table class="block" style="width:100%;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="block-header">
+                                            <h3 class="block-title">2nd Batch</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="block-content">
+                                            <table style="width:100%;" cellpadding="8" cellspacing="" class="schedule">
+                                                <tr>
+                                                    <td class="icon">
+                                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
+                                                    </td>
+                                                    <td class="content">
+                                                        <h4 class="sub-title">From</h4>
+                                                        <div class="date">12 Oct 2019</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+            
+                                            <table style="width:100%;" cellpadding="0" cellspacing="0" class="schedule">
+                                                <tr>
+                                                    <td class="icon">
+                                                        <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
+                                                    </td>
+                                                    <td class="content">
+                                                        <h4 class="sub-title">To</h4>
+                                                        <div class="date">22 Oct 2019</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="width:100%; margin: 2rem 0;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="text-align: center;">
+                                <a href="#REQUEST_COURSE" class="btn btn-hero btn-primary btn-icon">
+                                    Request New Course
+                                    <span class="icon">
+                                        <img src="<%host_url%>/assets/icons/request_icon.png" alt="Request New Course">
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+            
+
+        </table>
+
+        <table cellpadding="0" cellspacing="0" style="width:100%;">
+            <tr>
+                <td id="footer">
+                    <table cellpadding="0" cellspacing="0" style="width:100%;">
+                        <tr>
+                            <td style="width: 50%;">
+                                <div class="address">
+                                    313/530 Little Collins Street, <br>
+                                    Melbourne, VIC – 3000
                                 </div>
-                            </div>
-                        </div>
-                        <!-- block -->
-                        
-                    </div>
-                    <!-- column -->
-                </div>
+                                <div class="contacts">
+                                    <div>
+                                        <a href="mailto:contact@spectarlearning.com" style="color: #fff;">contact@spectarlearning.com</a>
+                                    </div>
+                                    <div>+61 (0) 478 841 203</div>
+                                </div>
+                
+                                <div class="social-icons">
+                                    <a style="margin-right: 0.5rem;" href="#SOCIAL_TWITTER" class="social-icon">
+                                        <img src="<%host_url%>/assets/icons/twitter_icon.png" alt="Twitter">
+                                    </a>
+                                    <a style="margin-right: 0.5rem;" href="#SOCIAL_LINKEDIN" class="social-icon">
+                                        <img src="<%host_url%>/assets/icons/linkedin_icon.png" alt="LinkedIn">
+                                    </a>
+                                    <a href="#SOCIAL_FACEBOOK" class="social-icon">
+                                        <img src="<%host_url%>/assets/icons/facebook_icon.png" alt="Facebook">
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div style="text-align: center;">
+                                    <img width="175px" src="<%host_url%>/assets/images/mf_logo_2.png" alt="Micro Focus">
+                                </div>
+                                <div style="text-align: center;">
+                                    <img width="100px" src="<%host_url%>/assets/images/mf_logo.png" alt="Micro Focus">
+                                </div>
+                            </td>
+                        </tr>
 
-                <div style="text-align: center; margin: 2rem 0;">
-                    <a href="#REQUEST_COURSE" class="btn btn-hero btn-primary btn-icon">
-                        Request New Course
-                        <div class="icon">
-                            <img src="<%host_url%>/assets/icons/request_icon.png" alt="Request New Course">
-                        </div>
-                    </a>
-                </div>
+                    </table>
+                </td>
+            </tr>
+        </table>
 
-            </div>
-            <!-- #courses -->
-
-        </main>
-
-        <footer>
-            <div class="grid">
-                <div class="column">
-                    <div class="address">
-                        313/530 Little Collins Street, <br>
-                        Melbourne, VIC – 3000
-                    </div>
-                    <div class="contacts">
-                        <div>contact@spectarlearning.com</div>
-                        <div>+61 (0) 478 841 203</div>
-                    </div>
-    
-                    <div class="social-icons">
-                        <a href="#SOCIAL_TWITTER" class="social-icon">
-                            <img src="<%host_url%>/assets/icons/twitter_icon.png" alt="Twitter">
-                        </a>
-                        <a href="#SOCIAL_LINKEDIN" class="social-icon">
-                            <img src="<%host_url%>/assets/icons/linkedin_icon.png" alt="LinkedIn">
-                        </a>
-                        <a href="#SOCIAL_FACEBOOK" class="social-icon">
-                            <img src="<%host_url%>/assets/icons/facebook_icon.png" alt="Facebook">
-                        </a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div style="text-align: center;">
-                        <img width="175px" src="<%host_url%>/assets/images/mf_logo_2.png" alt="Micro Focus">
-                    </div>
-                    <div style="text-align: center;">
-                        <img width="100px" src="<%host_url%>/assets/images/mf_logo.png" alt="Micro Focus">
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
     </div>
 
 </body>
