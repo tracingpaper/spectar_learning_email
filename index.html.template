@@ -80,10 +80,6 @@
             background: #e6e6e6;
         }
 
-        .block:not(:last-child) {
-            margin-bottom: 1rem;
-        }
-
         .block .block-header .block-title {
             font-size: 1rem;
             font-weight: 600;
@@ -157,10 +153,6 @@
             display: inline;
         }
 
-        header .navbar ul li:not(:last-child){
-            margin-right: 0.25rem;
-        }
-
         header .navbar ul li a {
             color: #999999;
             padding: 0.5rem 1rem;
@@ -189,14 +181,12 @@
         #hero .hero-content {
             background: rgba(0,0,0,0.55);
             height: 100%;
-            display: flex;
-            align-items: center;
             color: #fff;
             padding: 1rem 2rem;
         }
 
         #hero .hero-content > div {
-            margin-top: 6rem;
+            margin-top: 3.5rem;
         }
 
         #hero .hero-content h1.title {
@@ -456,7 +446,7 @@
                                 <h3 class="block-title">1st Batch</h3>
                             </div>
                             <div class="block-content">
-                                <div class="schedule">
+                                <div class="schedule" style="margin-bottom: 1rem;">
                                     <div class="icon">
                                         <img src="<%host_url%>/assets/icons/calendar_icon.png" alt="From">
                                     </div>
