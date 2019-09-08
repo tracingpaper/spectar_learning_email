@@ -340,7 +340,6 @@
             <div class="brand">
                 <a href="#LOGO" class="logo">
                     <img src="<%host_url%>/assets/logo.png" alt="Spectar Learning">
-                    <span class="text">Learning</span>
                 </a>
             </div>
             <div class="navbar">
