@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tracingpaper/spectar_learning_email/issues"
   },
-  "homepage": "https://github.com/tracingpaper/spectar_learning_email#readme"
+  "homepage": "https://github.com/tracingpaper/spectar_learning_email#readme",
+  "dependencies": {
+    "handlebars": "^4.2.0"
+  }
 }
