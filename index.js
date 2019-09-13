@@ -32,7 +32,7 @@ processed = template({
         social: {
             twitter: 'https://twitter.com/SpectarG',
             linkedin: 'https://in.linkedin.com/company/spectar-group-pty-ltd',
-            facebook: 'https://www.facebook.com/Spectar-Learning-103582474323569/?modal=admin_todo_tour'
+            facebook: 'https://www.facebook.com/Spectar-Learning-103582474323569'
         }
     },
     batches: [
